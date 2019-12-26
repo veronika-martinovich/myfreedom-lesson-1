@@ -1,16 +1,11 @@
 import React from "react";
 import "./icon-bar.css";
 
-export const IconBar = ({orientation}) => {
-    let className = '';
-    if (orientation) { 
-    className = `icon-bar icon-bar_${orientation}`
-    } else {
-    className = 'icon-bar icon-bar_horizontal';
-    }
+export const IconBar = ({orientation = 'horizontal'}) => {
+    const className = `icon-bar icon-bar_${orientation}`;
     
     return (
-        <div className={className} orientation={orientation}>
+        <div className={className}>
             <a className="active" href="#"><i className="fa fa-home"></i></a> 
             <a><i className="fa fa-search"></i></a> 
             <a><i className="fa fa-envelope"></i></a> 

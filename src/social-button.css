@@ -1,4 +1,4 @@
-.fa {
+.fa-social {
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -7,7 +7,7 @@
     border-style: none;
 }
   
-.fa:hover {
+.fa-social:hover {
     opacity: 0.7;
 }
   

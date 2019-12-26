@@ -1,10 +1,4 @@
 import React from "react";
 import "./social-button.css";
 
-export const SocialButton = ({type}) => {
-    const className = `fa fa-${type}`;
-
-    return (
-        <a className={className}></a>
-    );
-}
+export const SocialButton = ({type}) => <a className={`fa fa-social fa-${type}`}></a>;
